@@ -16,18 +16,17 @@ namespace EV2.DTOs
 
 
         [Required(ErrorMessage = "Estado del proyecto, debe ser incorporado obligatoriamente")]
-        [RegularExpression("Pendiente|En Progreso|Finalizado", ErrorMessage = "El estado debe ser 'Pendiente', 'En progreso' o 'Finalizado'.")]
+        [RegularExpression("Pendiente|En Progreso|Finalizado", ErrorMessage = "Estado inválido.")]
         public string Estado { get; set; }
 
-        [Range(0, int.MaxValue, ErrorMessage = "Las horas trabajadas deben ser 0 o más.")]
+        [Range(0, int.MaxValue, ErrorMessage = "Horas trabajadas no válidas.")]
         public int HorasTrabajadas { get; set; } = 0;
 
-        [Required(ErrorMessage = "Las horas totales son obligatorias.")]
-        [Range(1, int.MaxValue, ErrorMessage = "Las horas totales deben ser mayores que 0.")]
+        [Required(ErrorMessage = "Horas totales son obligatorias.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Horas totales inválidas.")]
         public int HorasTotales { get; set; }
 
-        [Required(ErrorMessage = "La fecha de creación es obligatoria.")]
+        [Required(ErrorMessage = "Fecha de creación obligatoria.")]
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
-
     }
 }
