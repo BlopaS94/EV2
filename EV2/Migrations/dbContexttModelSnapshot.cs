@@ -147,10 +147,6 @@ namespace EV2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Apellido")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -174,7 +170,6 @@ namespace EV2.Migrations
                         new
                         {
                             Id = 1,
-                            Apellido = "Cabrera",
                             Email = "jano@jano.cl",
                             Nombre = "Alejandro ",
                             Password = "12345",
@@ -183,7 +178,6 @@ namespace EV2.Migrations
                         new
                         {
                             Id = 2,
-                            Apellido = "Alegria",
                             Email = "janito@janito.cl",
                             Nombre = "Alegriaa",
                             Password = "12345",

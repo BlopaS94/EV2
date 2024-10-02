@@ -24,7 +24,6 @@ namespace EV2.Services
             var nuevoUsuario = new Usuario
             {
                 Nombre = usuarioDTO.Nombre,
-                Apellido = usuarioDTO.Apellido,
                 Email = usuarioDTO.Email,
                 Password = usuarioDTO.Password,
                 RolId = usuarioDTO.RolId
@@ -55,7 +54,6 @@ namespace EV2.Services
             if (!rolValido) throw new InvalidOperationException("Rol incorrecto!.");
 
             usuarioExistente.Nombre = usuarioDTO.Nombre;
-            usuarioExistente.Apellido = usuarioDTO.Apellido;
             usuarioExistente.Email = usuarioDTO.Email;
             usuarioExistente.Password = usuarioDTO.Password;
             usuarioExistente.RolId = usuarioDTO.RolId;

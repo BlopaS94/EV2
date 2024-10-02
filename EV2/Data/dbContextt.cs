@@ -37,7 +37,6 @@ namespace EV2.Data
             {
                 Id = 1,
                 Nombre = "Alejandro ",
-                Apellido = "Cabrera",
                 Email = "jano@jano.cl",
                 Password = "12345",
                 RolId = 1
@@ -47,7 +46,6 @@ namespace EV2.Data
             {
                 Id = 2,
                 Nombre = "Alegriaa",
-                Apellido = "Alegria",
                 Email = "janito@janito.cl",
                 Password = "12345",
                 RolId = 2
