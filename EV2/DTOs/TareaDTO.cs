@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Practico2PA.DTOs
+namespace EV2.DTOs
 {
     public class TareaDTO
     {
