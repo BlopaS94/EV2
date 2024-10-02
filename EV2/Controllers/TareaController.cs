@@ -1,4 +1,5 @@
-﻿using EV2.DTOs;
+﻿using EV2.Data;
+using EV2.DTOs;
 using EV2.Responses;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,7 @@ namespace EV2.Controllers
 
             public TareasController(IServiceProvider serviceProvider)
             {
-                var context = serviceProvider.GetRequiredService<EjemploDbContext>();
+                var context = serviceProvider.GetRequiredService<dbContextt>();
                 _tareaService = new TareaService(context);
             }
 
